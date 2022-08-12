@@ -181,6 +181,7 @@ async def next_page(bot, query):
             for file in files
         ]
     else:
+        await message.reply("😍")
         btn = [
             [
                 InlineKeyboardButton(
@@ -193,7 +194,9 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-
+    else:
+        await message.reply("😍")
+        
     if 0 < offset <= 5:
         off_set = 0
     elif offset == 0:
@@ -1645,6 +1648,7 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
     else:
+        await message.reply("🥰")
         btn = [
             [
                 InlineKeyboardButton(
@@ -1658,7 +1662,8 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-
+    else:
+        await message.reply("😍") 
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
         BUTTONS[key] = search
