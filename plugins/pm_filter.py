@@ -196,6 +196,7 @@ async def next_page(bot, query):
         ]
     else:
         await message.reply("😍")
+        return
         
     if 0 < offset <= 5:
         off_set = 0
